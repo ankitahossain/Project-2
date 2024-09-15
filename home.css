@@ -60,7 +60,9 @@ p {
     --navbar_color: #160c6d79;
     --grey_background_color: #F9F9FB;
     --white_color: #FFFFFF;
+    --whatwedo_background:#f6f5ff;
     --green_color: #1BBF00;
+    --orange_color: #FF7628;
     --footer_color: #48409C;
     --primary_font_color: #141135;
     --secondary_font_color: #726E9E;
@@ -77,14 +79,12 @@ p {
 /* ============ Navbar ======== */
 .navbar {
     padding: 12px 0;
-    background-color: #160c6d95;
-
-
+    background-color: var(--navbar_color);
     position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
     z-index: 10;
+    top:0;
+    left:0;
+    width:100%;
 
 
 
@@ -98,7 +98,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    
 }
 
 .NavUl,
@@ -121,7 +121,7 @@ p {
 
 .NavUlLi .dropDown {
     position: absolute;
-    background-color: black;
+
     display: none;
     width: 150px;
     top: 100%;
@@ -230,7 +230,7 @@ p {
 }
 
 .bannerTitle {
-    color: #FAFAFE;
+    color: var(--white_color);
     font-size: 84px;
     font-weight: 700;
     line-height: 100px;
@@ -245,7 +245,7 @@ p {
     font-weight: 400;
     line-height: 40px;
     font-family: var(--paprika);
-    color: #E6E5F3;
+    color: var(--grey_background_color);
     max-width: 715px;
     max-height: 160px;
     text-align: center;
@@ -539,7 +539,7 @@ p {
 .WhatWeDo {
     padding: 100px 0;
     position: relative;
-    background-color: #f6f5ff;
+    background-color: var(--whatwedo_background);
 }
 
 .WhatWeDoTitle {
@@ -1080,7 +1080,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.65);
 
 
 i[class="fa-sharp fa-solid fa-star fa-beat"]{
-    color: #FF7628;
+    color:var(--orange_color);
 
 }
 
@@ -1138,7 +1138,7 @@ i[class="fa-solid fa-angle-left fa-beat"],i[class="fa-solid fa-angle-right fa-be
 }
 .angle_circle{
     padding: 14px 18px;
-    background-color: #1BBF00;
+    background-color:var(--green_color);
     border-radius: 50%;
 }
 
